@@ -1,0 +1,15 @@
+Introduction:
+Mission Kitchen is an IoT based embedded application which helps us to track our groceries in the kitchen and provide day to day analytics of usage. It also provides us with security features like gas and fire detection and is also comes with automatic lighting system for our kitchen. All the data from this embedded device will be uploaded to a database (firebase) and the analytics can be viewed at any time from a custom-built Android application.  
+
+Sensors used:
+	To calculate amount of groceries left: Ultrasonic sensor, Load Cell
+	To detect gas leakage and any fire accident if any: MQ-6
+
+Database used: Firebase
+
+Technologies used: Internet of Things
+
+Working: 
+	Real time analog sensor values are calculated through arduino and that whole bunch of data is sent to a serial port of the system. The python client running on the machine accepts that serial data and pushes the data to cloud(Firebase) by dividing it into chunks. This whole bunch of data can be viewed from an android application(authorized) at any time where we can also have a glimpse of the analytics in graphical form.
+
+Applications: groceries tracking, alerts is there is shortage of sugar or something, generates shopping list to make things easy... :)
